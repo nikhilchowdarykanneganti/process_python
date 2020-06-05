@@ -1,0 +1,20 @@
+def setup():
+    size(400,400)
+    background(0)
+    colorMode(RGB)
+    noStroke()
+r,g,b=0,0,0
+def draw():
+    global r,g,b
+    fill(r,0,0)
+    ellipse(100,height/2,100,100)
+    r+=1
+    r%=255
+    fill(0,g,0)
+    ellipse(200,height/2,100,100)
+    g+=1
+    g%=255
+    fill(0,0,b)
+    ellipse(300,height/2,100,100)
+    b+=1
+    b%=255
